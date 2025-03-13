@@ -15,7 +15,7 @@ const PersonForm = ({ addPerson, newName, handleNameChange, newNumber, handleNum
       number: <input value={newNumber} onChange={handleNumberChange} />
     </div>
     <div>
-      <button type="submit">add</button>
+      <button type="submit">adda</button>
     </div>
   </form>
 );
@@ -43,7 +43,7 @@ const App = () => {
       alert(`${newName} is already added to phonebook`);
       return;
     }
-    
+
     setPersons([...persons, { name: newName, number: newNumber }]);
     setNewName('');
     setNewNumber('');
